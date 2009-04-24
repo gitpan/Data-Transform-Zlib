@@ -1,0 +1,29 @@
+---
+abstract: 'A Filter for RFC195[0-2]'
+author:
+  - 'Data::Transform::Zlib was adapted from the POE::Filter::Zlib filter'
+build_requires:
+  Data::Transform::Line: 0
+  Data::Transform::Stackable: 0
+  Test::More: 0.47
+distribution_type: module
+generated_by: 'Module::Install version 0.79'
+license: gpl
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.4.html
+  version: 1.4
+name: Data-Transform-Zlib
+no_index:
+  directory:
+    - inc
+    - t
+provides:
+  Data::Transform::Zlib:
+    file: lib/Data/Transform/Zlib.pm
+    version: 0.01
+requires:
+  Carp: 0
+  Compress::Raw::Zlib: 2.000
+  Data::Transform: 0
+  perl: 5.6.0
+version: 0.01
