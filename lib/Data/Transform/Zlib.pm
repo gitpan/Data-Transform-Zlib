@@ -8,7 +8,7 @@ use Compress::Raw::Zlib qw(Z_OK Z_STREAM_END Z_FINISH Z_SYNC_FLUSH);
 
 use base qw(Data::Transform);
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 =head1 NAME
 
@@ -91,11 +91,6 @@ sub clone {
       $inflate_options,
   ];
   return bless $nself, ref $self;
-}
-
-sub get_pending {
-  my $self = shift;
-  return $self->{BUFFER} ? [ $self->{BUFFER} ] : undef;
 }
 
 sub _handle_get_data {
